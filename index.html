@@ -1,0 +1,67 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>forms</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<div class="body">
+  <form action="" class="form">
+    <div class="header">
+      <div class="header__text">
+        <div class="header__name">
+          Harold Finch
+        </div>
+        <div class="header__total">
+          Your total
+        </div>
+      </div>
+      <div class="header__summ">
+        $88
+      </div>
+    </div>
+    <div class="form-body">
+      <div class="field-wrap">
+        <label class="field-wrap__label"  for="cardId">Credit card number</label>
+        <input class="field-wrap__input field-wrap__input--big" type="text" name="cardId" id="cardId" required>
+      </div>
+
+      <div class="field-wrap">
+        <label class="field-wrap__label"  >Expiration date</label>
+        <select class="field-wrap__input field-wrap__input--60" type="month" name="monthId" required>
+          <option value='' selected disabled hidden>Month</option>
+            <option value='01'>Jan</option>
+        <label class="field-wrap__label"  >year</label>
+        </select>
+        <select class="field-wrap__input field-wrap__input--12" type="year" name="yearId" required>
+          <option value='' selected disabled hidden>Year</option>
+            <option value='01'>2016</option>
+        </select>
+
+        <div class="field-wrap">
+          <label class="field-wrap__label"  for="cvvId">CVV</label>
+          <input class="field-wrap__input field-wrap__input--cvv" type="text" name="Id" id="cvvId" required>
+          <p class="field-wrap__text"> 3 or 4 digits - <a href="http://www.krokotop.com.ua" target="_blank" title="cvv">view example</a></p>
+        </div>
+
+         <input class="field-wrap__img-pay" type="image" src="pay.jpg" name="pay">
+
+      </div>
+      <div class="field-wrap checkbox-wrap">
+        <input type="checkbox" name="check01" id="check01">
+        <label for="check01">I aggre with policy</label>
+
+      </div>
+       <a class="field-wrap__text-footer" href="http://www.krokotop.com.ua" target="cancel" title="cancel">cancel order</a>
+
+
+    </div>
+
+  </form>
+</div>
+</body>
+</html>

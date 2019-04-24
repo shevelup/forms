@@ -1,0 +1,119 @@
+.body{
+  background-color: grey;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.form{
+  display: block;
+  margin: 0px auto;
+  width: 400px;
+  background-color: #fff;
+}
+
+.header{
+  background-color: #eee4a9;
+  padding: 22px 25px;
+  overflow: auto;
+}
+
+.header__text{
+  float: left;
+
+}
+
+.header__summ{
+  float: right;
+  font-size: 2.25em;
+}
+
+
+.form-body{
+  padding: 22px 25px;
+  margin-bottom: 20px;
+}
+
+.field-wrap{
+  margin-bottom: 20px;
+}
+.field-wrap__text {
+ display: inline-block;
+ margin-left:3%;
+}
+
+.field-wrap__img-pay {
+ display: inline-block;
+ width: 100%;
+}
+
+.field-wrap__label{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top:5%;
+}
+
+.field-wrap__input{
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1em;
+  display: inline-block;
+}
+
+.field-wrap__input--big{
+  width: 100%;
+}
+.field-wrap__input--cvv{
+  width: 30%;
+    }
+
+
+.field-wrap__input--60 {
+  width: 60%;
+  margin-right: 5%;
+}
+.field-wrap__input--12{
+  width: 35%;
+   margin-right: 0%;
+   float:right;
+}
+
+
+
+.checkbox-wrap input{
+  display: none;
+}
+
+.checkbox-wrap label{
+  padding-left: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-wrap label:after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  top: -2px;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox-wrap input:checked + label:after{
+  border-color: #333;
+  background-image: url('https://reactnativecode.com/wp-content/uploads/2019/01/check.png');
+
+}
+
+.field-wrap__text-footer {
+  display: block;
+  text-align: center;
+}
